@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tasksFrame.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

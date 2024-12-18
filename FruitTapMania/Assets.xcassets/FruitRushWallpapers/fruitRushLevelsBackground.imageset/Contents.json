@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "fruitRushLevelsBackground.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4037F0522D0B2464008E3AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037F0512D0B2464008E3AAE /* AppDelegate.swift */; };
+		4037F05D2D0B2464008E3AAE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4037F05C2D0B2464008E3AAE /* Base */; };
+		4037F05F2D0B2466008E3AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4037F05E2D0B2466008E3AAE /* Assets.xcassets */; };
+		4037F0622D0B2466008E3AAE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4037F0612D0B2466008E3AAE /* Base */; };
+		4037F06C2D0B24EF008E3AAE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4037F06B2D0B24EF008E3AAE /* SnapKit */; };
+		4037F06F2D0B252B008E3AAE /* FruitTapAppStartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037F06E2D0B252B008E3AAE /* FruitTapAppStartController.swift */; };
+		4037F0712D0B254D008E3AAE /* FruitTapTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037F0702D0B254D008E3AAE /* FruitTapTabBarController.swift */; };
+		4037F0732D0B2573008E3AAE /* FruitTapLevelsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037F0722D0B2573008E3AAE /* FruitTapLevelsController.swift */; };
+		4037F0752D0B257C008E3AAE /* FruitTapStoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037F0742D0B257C008E3AAE /* FruitTapStoreController.swift */; };
+		4037F0772D0B2594008E3AAE /* FruitRushTasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037F0762D0B2594008E3AAE /* FruitRushTasksController.swift */; };
+		4037F0792D0B259D008E3AAE /* FruitRushGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037F0782D0B259D008E3AAE /* FruitRushGameController.swift */; };
+		403FBEDA2D0C396C001FB695 /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403FBED92D0C396C001FB695 /* Baloo-Regular.ttf */; };
+		409522A32D0F12280067800A /* FruitTapSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409522A22D0F12280067800A /* FruitTapSettingsController.swift */; };
+		409522A52D0F1CE70067800A /* FruitTapWheelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409522A42D0F1CE70067800A /* FruitTapWheelController.swift */; };
+		409522A72D0F1CEF0067800A /* FruitTapWheelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409522A62D0F1CEF0067800A /* FruitTapWheelScene.swift */; };
+		409522AC2D1043E20067800A /* FruitTapWheelWinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409522AB2D1043E20067800A /* FruitTapWheelWinController.swift */; };
+		40B587D22D1174D10098C135 /* bananaExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 40B587D02D1174D10098C135 /* bananaExplosion.sks */; };
+		40B587D52D1176370098C135 /* orangeExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 40B587D42D1176370098C135 /* orangeExplosion.sks */; };
+		40B587D72D1176960098C135 /* strawberryExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 40B587D62D1176960098C135 /* strawberryExplosion.sks */; };
+		40B587D92D1176F10098C135 /* watermelonExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 40B587D82D1176F10098C135 /* watermelonExplosion.sks */; };
+		40B587DB2D1177370098C135 /* grapeExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 40B587DA2D1177370098C135 /* grapeExplosion.sks */; };
+		40B587DD2D1196950098C135 /* FruitGameRoundEndController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B587DC2D1196950098C135 /* FruitGameRoundEndController.swift */; };
+		40B587E32D11B9A10098C135 /* fruitRoundLoseSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B587DF2D11B9A10098C135 /* fruitRoundLoseSound.mp3 */; };
+		40B587E42D11B9A10098C135 /* fruitTapBonusSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B587E02D11B9A10098C135 /* fruitTapBonusSound.mp3 */; };
+		40B587E52D11B9A10098C135 /* fruitCollectSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B587E12D11B9A10098C135 /* fruitCollectSound.mp3 */; };
+		40B587E62D11B9A10098C135 /* fruitRoundWinSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40B587E22D11B9A10098C135 /* fruitRoundWinSound.mp3 */; };
+		40EF6F392D1143C500B89B35 /* FruitRushGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF6F382D1143C500B89B35 /* FruitRushGameScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4037F04E2D0B2464008E3AAE /* FruitTapMania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitTapMania.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4037F0512D0B2464008E3AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4037F05C2D0B2464008E3AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4037F05E2D0B2466008E3AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4037F0612D0B2466008E3AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4037F0682D0B24B1008E3AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4037F06E2D0B252B008E3AAE /* FruitTapAppStartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTapAppStartController.swift; sourceTree = "<group>"; };
+		4037F0702D0B254D008E3AAE /* FruitTapTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTapTabBarController.swift; sourceTree = "<group>"; };
+		4037F0722D0B2573008E3AAE /* FruitTapLevelsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTapLevelsController.swift; sourceTree = "<group>"; };
+		4037F0742D0B257C008E3AAE /* FruitTapStoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTapStoreController.swift; sourceTree = "<group>"; };
+		4037F0762D0B2594008E3AAE /* FruitRushTasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRushTasksController.swift; sourceTree = "<group>"; };
+		4037F0782D0B259D008E3AAE /* FruitRushGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRushGameController.swift; sourceTree = "<group>"; };
+		403FBED92D0C396C001FB695 /* Baloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo-Regular.ttf"; sourceTree = "<group>"; };
+		409522A22D0F12280067800A /* FruitTapSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTapSettingsController.swift; sourceTree = "<group>"; };
+		409522A42D0F1CE70067800A /* FruitTapWheelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTapWheelController.swift; sourceTree = "<group>"; };
+		409522A62D0F1CEF0067800A /* FruitTapWheelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTapWheelScene.swift; sourceTree = "<group>"; };
+		409522AB2D1043E20067800A /* FruitTapWheelWinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTapWheelWinController.swift; sourceTree = "<group>"; };
+		40B587D02D1174D10098C135 /* bananaExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bananaExplosion.sks; sourceTree = "<group>"; };
+		40B587D42D1176370098C135 /* orangeExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = orangeExplosion.sks; sourceTree = "<group>"; };
+		40B587D62D1176960098C135 /* strawberryExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = strawberryExplosion.sks; sourceTree = "<group>"; };
+		40B587D82D1176F10098C135 /* watermelonExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = watermelonExplosion.sks; sourceTree = "<group>"; };
+		40B587DA2D1177370098C135 /* grapeExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = grapeExplosion.sks; sourceTree = "<group>"; };
+		40B587DC2D1196950098C135 /* FruitGameRoundEndController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitGameRoundEndController.swift; sourceTree = "<group>"; };
+		40B587DF2D11B9A10098C135 /* fruitRoundLoseSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitRoundLoseSound.mp3; sourceTree = "<group>"; };
+		40B587E02D11B9A10098C135 /* fruitTapBonusSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitTapBonusSound.mp3; sourceTree = "<group>"; };
+		40B587E12D11B9A10098C135 /* fruitCollectSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitCollectSound.mp3; sourceTree = "<group>"; };
+		40B587E22D11B9A10098C135 /* fruitRoundWinSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitRoundWinSound.mp3; sourceTree = "<group>"; };
+		40EF6F382D1143C500B89B35 /* FruitRushGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRushGameScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4037F04B2D0B2464008E3AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4037F06C2D0B24EF008E3AAE /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4037F0452D0B2464008E3AAE = {
+			isa = PBXGroup;
+			children = (
+				4037F0502D0B2464008E3AAE /* FruitTapMania */,
+				4037F04F2D0B2464008E3AAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4037F04F2D0B2464008E3AAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4037F04E2D0B2464008E3AAE /* FruitTapMania.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4037F0502D0B2464008E3AAE /* FruitTapMania */ = {
+			isa = PBXGroup;
+			children = (
+				40B587DE2D11B9960098C135 /* FruitTapSound */,
+				403FBED72D0C391D001FB695 /* FruitTapFont */,
+				4037F06D2D0B2514008E3AAE /* FruitRushControllerGroup */,
+				4037F0692D0B24C2008E3AAE /* FruitRushStoryboards */,
+				40B587CF2D1174AD0098C135 /* SceneFruitParticles */,
+				4037F05E2D0B2466008E3AAE /* Assets.xcassets */,
+				4037F0682D0B24B1008E3AAE /* Info.plist */,
+				4037F0512D0B2464008E3AAE /* AppDelegate.swift */,
+			);
+			path = FruitTapMania;
+			sourceTree = "<group>";
+		};
+		4037F0692D0B24C2008E3AAE /* FruitRushStoryboards */ = {
+			isa = PBXGroup;
+			children = (
+				4037F05B2D0B2464008E3AAE /* Main.storyboard */,
+				4037F0602D0B2466008E3AAE /* LaunchScreen.storyboard */,
+			);
+			path = FruitRushStoryboards;
+			sourceTree = "<group>";
+		};
+		4037F06D2D0B2514008E3AAE /* FruitRushControllerGroup */ = {
+			isa = PBXGroup;
+			children = (
+				4037F06E2D0B252B008E3AAE /* FruitTapAppStartController.swift */,
+				4037F0702D0B254D008E3AAE /* FruitTapTabBarController.swift */,
+				4037F0722D0B2573008E3AAE /* FruitTapLevelsController.swift */,
+				4037F0742D0B257C008E3AAE /* FruitTapStoreController.swift */,
+				409522A22D0F12280067800A /* FruitTapSettingsController.swift */,
+				4037F0762D0B2594008E3AAE /* FruitRushTasksController.swift */,
+				409522A82D0F1CF30067800A /* FruitRushWheelSet */,
+				40EF6F3A2D1143CA00B89B35 /* FruitRushGameSet */,
+			);
+			path = FruitRushControllerGroup;
+			sourceTree = "<group>";
+		};
+		403FBED72D0C391D001FB695 /* FruitTapFont */ = {
+			isa = PBXGroup;
+			children = (
+				403FBED92D0C396C001FB695 /* Baloo-Regular.ttf */,
+			);
+			path = FruitTapFont;
+			sourceTree = "<group>";
+		};
+		409522A82D0F1CF30067800A /* FruitRushWheelSet */ = {
+			isa = PBXGroup;
+			children = (
+				409522A42D0F1CE70067800A /* FruitTapWheelController.swift */,
+				409522A62D0F1CEF0067800A /* FruitTapWheelScene.swift */,
+				409522AB2D1043E20067800A /* FruitTapWheelWinController.swift */,
+			);
+			path = FruitRushWheelSet;
+			sourceTree = "<group>";
+		};
+		40B587CF2D1174AD0098C135 /* SceneFruitParticles */ = {
+			isa = PBXGroup;
+			children = (
+				40B587D02D1174D10098C135 /* bananaExplosion.sks */,
+				40B587D42D1176370098C135 /* orangeExplosion.sks */,
+				40B587D62D1176960098C135 /* strawberryExplosion.sks */,
+				40B587D82D1176F10098C135 /* watermelonExplosion.sks */,
+				40B587DA2D1177370098C135 /* grapeExplosion.sks */,
+			);
+			path = SceneFruitParticles;
+			sourceTree = "<group>";
+		};
+		40B587DE2D11B9960098C135 /* FruitTapSound */ = {
+			isa = PBXGroup;
+			children = (
+				40B587E12D11B9A10098C135 /* fruitCollectSound.mp3 */,
+				40B587DF2D11B9A10098C135 /* fruitRoundLoseSound.mp3 */,
+				40B587E22D11B9A10098C135 /* fruitRoundWinSound.mp3 */,
+				40B587E02D11B9A10098C135 /* fruitTapBonusSound.mp3 */,
+			);
+			path = FruitTapSound;
+			sourceTree = "<group>";
+		};
+		40EF6F3A2D1143CA00B89B35 /* FruitRushGameSet */ = {
+			isa = PBXGroup;
+			children = (
+				4037F0782D0B259D008E3AAE /* FruitRushGameController.swift */,
+				40EF6F382D1143C500B89B35 /* FruitRushGameScene.swift */,
+				40B587DC2D1196950098C135 /* FruitGameRoundEndController.swift */,
+			);
+			path = FruitRushGameSet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4037F04D2D0B2464008E3AAE /* FruitTapMania */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4037F0652D0B2466008E3AAE /* Build configuration list for PBXNativeTarget "FruitTapMania" */;
+			buildPhases = (
+				4037F04A2D0B2464008E3AAE /* Sources */,
+				4037F04B2D0B2464008E3AAE /* Frameworks */,
+				4037F04C2D0B2464008E3AAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FruitTapMania;
+			packageProductDependencies = (
+				4037F06B2D0B24EF008E3AAE /* SnapKit */,
+			);
+			productName = FruitBonanzaRush;
+			productReference = 4037F04E2D0B2464008E3AAE /* FruitTapMania.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4037F0462D0B2464008E3AAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					4037F04D2D0B2464008E3AAE = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 4037F0492D0B2464008E3AAE /* Build configuration list for PBXProject "FruitTapMania" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4037F0452D0B2464008E3AAE;
+			packageReferences = (
+				4037F06A2D0B24EF008E3AAE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 4037F04F2D0B2464008E3AAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4037F04D2D0B2464008E3AAE /* FruitTapMania */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4037F04C2D0B2464008E3AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B587E52D11B9A10098C135 /* fruitCollectSound.mp3 in Resources */,
+				4037F05D2D0B2464008E3AAE /* Base in Resources */,
+				40B587DB2D1177370098C135 /* grapeExplosion.sks in Resources */,
+				40B587D22D1174D10098C135 /* bananaExplosion.sks in Resources */,
+				40B587D92D1176F10098C135 /* watermelonExplosion.sks in Resources */,
+				403FBEDA2D0C396C001FB695 /* Baloo-Regular.ttf in Resources */,
+				40B587D72D1176960098C135 /* strawberryExplosion.sks in Resources */,
+				4037F05F2D0B2466008E3AAE /* Assets.xcassets in Resources */,
+				40B587E42D11B9A10098C135 /* fruitTapBonusSound.mp3 in Resources */,
+				40B587D52D1176370098C135 /* orangeExplosion.sks in Resources */,
+				4037F0622D0B2466008E3AAE /* Base in Resources */,
+				40B587E62D11B9A10098C135 /* fruitRoundWinSound.mp3 in Resources */,
+				40B587E32D11B9A10098C135 /* fruitRoundLoseSound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4037F04A2D0B2464008E3AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4037F0522D0B2464008E3AAE /* AppDelegate.swift in Sources */,
+				4037F0792D0B259D008E3AAE /* FruitRushGameController.swift in Sources */,
+				4037F0732D0B2573008E3AAE /* FruitTapLevelsController.swift in Sources */,
+				40B587DD2D1196950098C135 /* FruitGameRoundEndController.swift in Sources */,
+				409522A72D0F1CEF0067800A /* FruitTapWheelScene.swift in Sources */,
+				4037F0752D0B257C008E3AAE /* FruitTapStoreController.swift in Sources */,
+				4037F0712D0B254D008E3AAE /* FruitTapTabBarController.swift in Sources */,
+				4037F06F2D0B252B008E3AAE /* FruitTapAppStartController.swift in Sources */,
+				409522A52D0F1CE70067800A /* FruitTapWheelController.swift in Sources */,
+				4037F0772D0B2594008E3AAE /* FruitRushTasksController.swift in Sources */,
+				409522AC2D1043E20067800A /* FruitTapWheelWinController.swift in Sources */,
+				409522A32D0F12280067800A /* FruitTapSettingsController.swift in Sources */,
+				40EF6F392D1143C500B89B35 /* FruitRushGameScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4037F05B2D0B2464008E3AAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4037F05C2D0B2464008E3AAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4037F0602D0B2466008E3AAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4037F0612D0B2466008E3AAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4037F0632D0B2466008E3AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4037F0642D0B2466008E3AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4037F0662D0B2466008E3AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FruitTapMania/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fruit Tap Mania";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytrokorobka.fruittapmaniagame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4037F0672D0B2466008E3AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FruitTapMania/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fruit Tap Mania";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmytrokorobka.fruittapmaniagame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4037F0492D0B2464008E3AAE /* Build configuration list for PBXProject "FruitTapMania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4037F0632D0B2466008E3AAE /* Debug */,
+				4037F0642D0B2466008E3AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4037F0652D0B2466008E3AAE /* Build configuration list for PBXNativeTarget "FruitTapMania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4037F0662D0B2466008E3AAE /* Debug */,
+				4037F0672D0B2466008E3AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4037F06A2D0B24EF008E3AAE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4037F06B2D0B24EF008E3AAE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4037F06A2D0B24EF008E3AAE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4037F0462D0B2464008E3AAE /* Project object */;
+}
